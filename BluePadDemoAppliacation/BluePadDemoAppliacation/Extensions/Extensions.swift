@@ -1,8 +1,8 @@
 //
 //  Extensions.swift
-//  BluePad
+//  BluePadDemoAppliacation
 //
-//  Created by Вова Ващеня on 07.05.2021.
+//  Created by Вова Ващеня on 24.05.2021.
 //
 
 import Foundation

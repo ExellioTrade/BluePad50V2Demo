@@ -1,6 +1,6 @@
 
 //  SpinnerController.swift
-//  
+//  BluePadDemoAppliacation
 //
 //  Created by Вова Ващеня on 24.05.2021.
 //
