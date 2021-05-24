@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "BluePad50v2",
+        "repositoryURL": "https://github.com/ExellioTrade/BluepadiOS.git",
+        "state": {
+          "branch": "master",
+          "revision": "8e2966b3eba469753342fcf1a51e3821fd6d3a07",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
