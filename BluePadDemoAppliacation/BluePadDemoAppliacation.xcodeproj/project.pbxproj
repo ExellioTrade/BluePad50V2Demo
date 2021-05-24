@@ -3,27 +3,32 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		980A0C0F265B8FD4001A691B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980A0C0E265B8FD4001A691B /* AppDelegate.swift */; };
 		980A0C11265B8FD4001A691B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980A0C10265B8FD4001A691B /* SceneDelegate.swift */; };
-		980A0C13265B8FD4001A691B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980A0C12265B8FD4001A691B /* ViewController.swift */; };
+		980A0C13265B8FD4001A691B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980A0C12265B8FD4001A691B /* MainViewController.swift */; };
 		980A0C16265B8FD4001A691B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 980A0C14265B8FD4001A691B /* Main.storyboard */; };
 		980A0C18265B8FDE001A691B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 980A0C17265B8FDE001A691B /* Assets.xcassets */; };
 		980A0C1B265B8FDE001A691B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 980A0C19265B8FDE001A691B /* LaunchScreen.storyboard */; };
+		980A0C24265B90A6001A691B /* BluePad50v2 in Frameworks */ = {isa = PBXBuildFile; productRef = 980A0C23265B90A6001A691B /* BluePad50v2 */; };
+		980A0C27265B9273001A691B /* SpinnerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980A0C26265B9273001A691B /* SpinnerController.swift */; };
+		980A0C2A265B92B9001A691B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980A0C29265B92B9001A691B /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		980A0C0B265B8FD4001A691B /* BluePadDemoAppliacation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BluePadDemoAppliacation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		980A0C0E265B8FD4001A691B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		980A0C10265B8FD4001A691B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		980A0C12265B8FD4001A691B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		980A0C12265B8FD4001A691B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		980A0C15265B8FD4001A691B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		980A0C17265B8FDE001A691B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		980A0C1A265B8FDE001A691B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		980A0C1C265B8FDE001A691B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		980A0C26265B9273001A691B /* SpinnerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpinnerController.swift; sourceTree = "<group>"; };
+		980A0C29265B92B9001A691B /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				980A0C24265B90A6001A691B /* BluePad50v2 in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,13 +64,31 @@
 			children = (
 				980A0C0E265B8FD4001A691B /* AppDelegate.swift */,
 				980A0C10265B8FD4001A691B /* SceneDelegate.swift */,
-				980A0C12265B8FD4001A691B /* ViewController.swift */,
 				980A0C14265B8FD4001A691B /* Main.storyboard */,
 				980A0C17265B8FDE001A691B /* Assets.xcassets */,
 				980A0C19265B8FDE001A691B /* LaunchScreen.storyboard */,
 				980A0C1C265B8FDE001A691B /* Info.plist */,
+				980A0C25265B9251001A691B /* ViewControllers */,
+				980A0C28265B927C001A691B /* Extensions */,
 			);
 			path = BluePadDemoAppliacation;
+			sourceTree = "<group>";
+		};
+		980A0C25265B9251001A691B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				980A0C12265B8FD4001A691B /* MainViewController.swift */,
+				980A0C26265B9273001A691B /* SpinnerController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		980A0C28265B927C001A691B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				980A0C29265B92B9001A691B /* Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +107,9 @@
 			dependencies = (
 			);
 			name = BluePadDemoAppliacation;
+			packageProductDependencies = (
+				980A0C23265B90A6001A691B /* BluePad50v2 */,
+			);
 			productName = BluePadDemoAppliacation;
 			productReference = 980A0C0B265B8FD4001A691B /* BluePadDemoAppliacation.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +137,9 @@
 				Base,
 			);
 			mainGroup = 980A0C02265B8FD4001A691B;
+			packageReferences = (
+				980A0C22265B90A6001A691B /* XCRemoteSwiftPackageReference "BluepadiOS" */,
+			);
 			productRefGroup = 980A0C0C265B8FD4001A691B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,7 +167,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				980A0C13265B8FD4001A691B /* ViewController.swift in Sources */,
+				980A0C2A265B92B9001A691B /* Extensions.swift in Sources */,
+				980A0C13265B8FD4001A691B /* MainViewController.swift in Sources */,
+				980A0C27265B9273001A691B /* SpinnerController.swift in Sources */,
 				980A0C0F265B8FD4001A691B /* AppDelegate.swift in Sources */,
 				980A0C11265B8FD4001A691B /* SceneDelegate.swift in Sources */,
 			);
@@ -284,10 +316,12 @@
 		980A0C20265B8FDE001A691B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q2MLBR5MF6;
 				INFOPLIST_FILE = BluePadDemoAppliacation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,10 +336,12 @@
 		980A0C21265B8FDE001A691B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q2MLBR5MF6;
 				INFOPLIST_FILE = BluePadDemoAppliacation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -339,6 +375,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		980A0C22265B90A6001A691B /* XCRemoteSwiftPackageReference "BluepadiOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ExellioTrade/BluepadiOS.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		980A0C23265B90A6001A691B /* BluePad50v2 */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 980A0C22265B90A6001A691B /* XCRemoteSwiftPackageReference "BluepadiOS" */;
+			productName = BluePad50v2;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 980A0C03265B8FD4001A691B /* Project object */;
 }
