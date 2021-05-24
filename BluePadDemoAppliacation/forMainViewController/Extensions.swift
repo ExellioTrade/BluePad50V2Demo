@@ -823,7 +823,7 @@ extension MainViewController{
         case 2:
             let allertController = UIAlertController.init(title: "SetTimeOut", message: "", preferredStyle: .alert)
             allertController.addTextField { (textField) in
-                textField.placeholder = "seconds"
+                textField.placeholder = "ms"
                 textField.keyboardType = .numberPad
             }
             let actionCancel = UIAlertAction.init(title: "Cancel", style: .cancel) {  (UIAlertAction) in
