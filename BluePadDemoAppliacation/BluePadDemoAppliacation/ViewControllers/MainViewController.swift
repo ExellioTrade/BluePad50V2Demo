@@ -1,13 +1,11 @@
 
-
-//
 //  MainViewController.swift
-//  BluePad
+//  BluePadDemoApliacation
 //
 //  Created by Вова Ващеня on 24.05.2021.
 //
 import UIKit
-//import xcframework
+//import xcframework module 
 import BluePad50v2
 @available(iOS 13.0, *)
 class MainViewController: UIViewController{
